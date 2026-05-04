@@ -15,7 +15,7 @@ public class ActiveRagdollJoint : MonoBehaviour
         return m_joint;    
     }
 
-    void Awake()
+    protected virtual void Awake()
     {
         m_joint = GetComponent<ConfigurableJoint>();
 
@@ -30,19 +30,19 @@ public class ActiveRagdollJoint : MonoBehaviour
     }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    protected void Start()
     {
         
     }
 
     // Update is called once per frame
-    void Update()
+    protected virtual void Update()
     {
         UpdateDriveSettings();
         m_joint.SetTargetRotationLocal(pairedTo.localRotation, m_startRotationLocal);
     }
 
-    void UpdateDriveSettings()
+    protected virtual void UpdateDriveSettings()
     {
         JointDrive slerpDrive = m_joint.slerpDrive;
         slerpDrive.positionSpring = spring;

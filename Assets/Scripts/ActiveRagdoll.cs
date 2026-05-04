@@ -19,8 +19,8 @@ public class ActiveRagdoll : MonoBehaviour
         // get all joints
         foreach(ActiveRagdollJoint joint in m_joints)
         {
-            joint.spring = spring;
-            joint.damper = damper;
+            if(joint.spring <= 0) joint.spring = spring;
+            if(joint.damper < 0) joint.damper = damper;
         }
     }
 
