@@ -24,13 +24,28 @@ public class ActiveRagdollJoint : MonoBehaviour
     
     public float bigJitterMultiplier = 10;
 
+    public float initialBigJitterLength = 0.5f;
+
     public float deathLimit = 100;
 
     private ConfigurableJoint m_joint;
     private Quaternion m_startRotationLocal;
 
     private float m_nextJitter = -1;
+    private float m_initialBigJitterEnd = -1;
 
+    private float m_oldSpring;
+
+    public void CacheSpring()
+    {
+        m_oldSpring = spring;
+    }
+
+    public void ReloadCachedSpring()
+    {
+        spring = m_oldSpring;
+    }
+    
     public ConfigurableJoint GetConfigurableJoint()
     {
         return m_joint;    
@@ -66,9 +81,14 @@ public class ActiveRagdollJoint : MonoBehaviour
 
             if (jittering && Time.time > m_nextJitter)
             {
+                if(m_nextJitter < 0)
+                {
+                    m_initialBigJitterEnd = Time.time + initialBigJitterLength;    
+                }
+
                 float jMag = jitterMagnitudeDeg;
 
-                if(Random.Range(0, (int)(bigJitterEvery / jitterRate)) == 0)
+                if(Time.time < m_initialBigJitterEnd || Random.Range(0, (int)(bigJitterEvery / jitterRate)) == 0)
                 {
                     // big twitch
                     jMag *= bigJitterMultiplier;

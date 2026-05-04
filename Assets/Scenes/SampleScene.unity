@@ -580,13 +580,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 330585543}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.018835817, y: 0.9798266, z: -0.11243786, w: 0.1641427}
-  m_LocalPosition: {x: -1.15, y: 1.96, z: -7.56}
+  m_LocalRotation: {x: 0.064403445, y: 0.8299233, z: -0.09799888, w: 0.54541355}
+  m_LocalPosition: {x: -3.549, y: 2.371, z: -8.435}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 13.092, y: 160.98, z: 0}
+  m_LocalEulerAnglesHint: {x: 13.469, y: 113.375, z: 0}
 --- !u!114 &330585547
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -655,7 +655,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 81bb9eea30387e442899949a80011e55, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -0.66
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 81bb9eea30387e442899949a80011e55, type: 3}
       propertyPath: m_LocalPosition.y
@@ -663,23 +663,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 81bb9eea30387e442899949a80011e55, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -10.2
+      value: -11.2
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 81bb9eea30387e442899949a80011e55, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.997076
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 81bb9eea30387e442899949a80011e55, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 81bb9eea30387e442899949a80011e55, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0.07641747
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 81bb9eea30387e442899949a80011e55, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 81bb9eea30387e442899949a80011e55, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -687,7 +687,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 81bb9eea30387e442899949a80011e55, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: -8.765
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 81bb9eea30387e442899949a80011e55, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -1075,13 +1075,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 410087039}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.78228027, y: -0.25816238, z: -0.018432362, w: 0.56661266}
+  m_LocalRotation: {x: 0.74654317, y: 0.036658168, z: 0.31551823, w: 0.5846177}
   m_LocalPosition: {x: 0, y: 3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 61.28, y: -138.022, z: -117.867}
+  m_LocalEulerAnglesHint: {x: 58.185, y: -257.139, z: -233.476}
 --- !u!114 &410087042
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1290,6 +1290,7 @@ MonoBehaviour:
   jitterMagnitudeDeg: 1
   bigJitterEvery: 2
   bigJitterMultiplier: 10
+  initialBigJitterLength: 0.5
   deathLimit: 100
 --- !u!1 &484650765
 GameObject:
@@ -1356,7 +1357,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: 5d4f5a1457d4c434cbda5e52c34ae048, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1396,8 +1397,8 @@ Transform:
   m_GameObject: {fileID: 484650765}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.10825, y: 1.69, z: -8.76084}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 2.15, y: 1.6864, z: 0}
+  m_LocalScale: {x: 1, y: 2.3727329, z: 150}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -1680,6 +1681,7 @@ MonoBehaviour:
   jitterMagnitudeDeg: 1
   bigJitterEvery: 2
   bigJitterMultiplier: 10
+  initialBigJitterLength: 0.5
   deathLimit: 100
 --- !u!1 &618711149
 GameObject:
@@ -1835,7 +1837,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 6719126a77b90094cb6686b0ba734499, type: 2}
+  - {fileID: 2100000, guid: 33262836b12da8840a8693ddf7d9bdf9, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1874,13 +1876,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 650853374}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -1.94394}
-  m_LocalScale: {x: 10, y: 1, z: 150}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: -1.81, y: 0, z: 0}
+  m_LocalScale: {x: 150, y: 1, z: 10}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1 &690847975 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -1788042143607354660, guid: 81bb9eea30387e442899949a80011e55, type: 3}
@@ -7210,6 +7212,7 @@ MonoBehaviour:
   jitterMagnitudeDeg: 1
   bigJitterEvery: 2
   bigJitterMultiplier: 10
+  initialBigJitterLength: 0.5
   deathLimit: 100
 --- !u!1 &898942070 stripped
 GameObject:
@@ -7390,6 +7393,7 @@ MonoBehaviour:
   jitterMagnitudeDeg: 1
   bigJitterEvery: 2
   bigJitterMultiplier: 10
+  initialBigJitterLength: 0.5
   deathLimit: 100
 --- !u!1 &904728394 stripped
 GameObject:
@@ -7408,13 +7412,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26aed7c17981a6742b46beef1dbe2eb6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ActiveRagdoll
-  spring: 2000
+  spring: 1000
   damper: 2
   jitterRate: 0.1
   jitterIncreaseRate: 0.25
   jitterMagnitudeDeg: 5
   bigJitterEvery: 10
   bigJitterMultiplier: 5
+  initialBigJitterLength: 1
   deathLimit: 50
 --- !u!114 &904728400
 MonoBehaviour:
@@ -7431,9 +7436,13 @@ MonoBehaviour:
   animatedDummyController: {fileID: 1717934486}
   hipJoint: {fileID: 1543480745}
   lightningObjects:
-  - {fileID: 1153797567}
   - {fileID: 1019530631}
+  - {fileID: 1153797567}
   - {fileID: 845866122}
+  tazeKills: 0
+  tazeSpeedup: 4
+  tazeSpeedDecay: 0.998
+  tazedSpring: 3000
   taze: 0
 --- !u!1 &969611648 stripped
 GameObject:
@@ -7657,7 +7666,7 @@ ParticleSystem:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1019530631}
   serializedVersion: 8
-  lengthInSec: 3
+  lengthInSec: 5
   simulationSpeed: 1
   stopAction: 0
   cullingMode: 0
@@ -17709,6 +17718,7 @@ MonoBehaviour:
   jitterMagnitudeDeg: 1
   bigJitterEvery: 2
   bigJitterMultiplier: 10
+  initialBigJitterLength: 0.5
   deathLimit: 100
 --- !u!4 &1217210341 stripped
 Transform:
@@ -18094,6 +18104,7 @@ MonoBehaviour:
   jitterMagnitudeDeg: 10
   bigJitterEvery: 2
   bigJitterMultiplier: 10
+  initialBigJitterLength: 0.5
   deathLimit: 100
 --- !u!1 &1493870956 stripped
 GameObject:
@@ -18274,6 +18285,7 @@ MonoBehaviour:
   jitterMagnitudeDeg: 1
   bigJitterEvery: 2
   bigJitterMultiplier: 10
+  initialBigJitterLength: 0.5
   deathLimit: 100
 --- !u!1 &1543480739 stripped
 GameObject:
@@ -18452,6 +18464,7 @@ MonoBehaviour:
   jitterMagnitudeDeg: 1
   bigJitterEvery: 2
   bigJitterMultiplier: 10
+  initialBigJitterLength: 0.5
   deathLimit: 100
   positionSpring: 0
   positiveDamper: 0
@@ -18858,6 +18871,7 @@ MonoBehaviour:
   jitterMagnitudeDeg: 1
   bigJitterEvery: 2
   bigJitterMultiplier: 10
+  initialBigJitterLength: 0.5
   deathLimit: 100
 --- !u!4 &1892362541 stripped
 Transform:
@@ -19094,6 +19108,7 @@ MonoBehaviour:
   jitterMagnitudeDeg: 1
   bigJitterEvery: 2
   bigJitterMultiplier: 10
+  initialBigJitterLength: 0.5
   deathLimit: 100
 --- !u!4 &1922636829 stripped
 Transform:
@@ -19284,6 +19299,7 @@ MonoBehaviour:
   jitterMagnitudeDeg: 1
   bigJitterEvery: 2
   bigJitterMultiplier: 10
+  initialBigJitterLength: 0.5
   deathLimit: 100
 --- !u!1 &1998428187 stripped
 GameObject:
@@ -19600,6 +19616,95 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2016439769}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &2057810419
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2057810422}
+  - component: {fileID: 2057810421}
+  - component: {fileID: 2057810420}
+  m_Layer: 0
+  m_Name: Cube (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!23 &2057810420
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2057810419}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 7c00fd5ecc7030b4fa6fed47a2d6b019, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &2057810421
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2057810419}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &2057810422
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2057810419}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.15, y: 4.02, z: 0}
+  m_LocalScale: {x: 1, y: 2.3727329, z: 150}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &2073078884 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -3787256744503370023, guid: 81bb9eea30387e442899949a80011e55, type: 3}
@@ -19719,3 +19824,4 @@ SceneRoots:
   - {fileID: 341298357}
   - {fileID: 1677810425}
   - {fileID: 484650769}
+  - {fileID: 2057810422}

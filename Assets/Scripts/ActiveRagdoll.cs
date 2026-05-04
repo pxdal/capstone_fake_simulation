@@ -15,6 +15,7 @@ public class ActiveRagdoll : MonoBehaviour
     public float jitterMagnitudeDeg = 10;
     public float bigJitterEvery = 2;
     public float bigJitterMultiplier = 10;
+    public float initialBigJitterLength = 0.5f;
     public float deathLimit = 100;
 
     // PRIVATE //
@@ -36,6 +37,7 @@ public class ActiveRagdoll : MonoBehaviour
             joint.jitterIncreaseRate = jitterIncreaseRate;
             joint.bigJitterEvery = bigJitterEvery;
             joint.bigJitterMultiplier = bigJitterMultiplier;
+            joint.initialBigJitterLength = initialBigJitterLength;
             joint.deathLimit = deathLimit;
         }
     }
