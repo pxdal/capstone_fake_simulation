@@ -8,6 +8,15 @@ public class ActiveRagdoll : MonoBehaviour
     public float spring = 1;
     public float damper = 0;
 
+    [Header("Jitter Settings")]
+
+    public float jitterRate = 0.1f;
+    public float jitterIncreaseRate = 0.1f;
+    public float jitterMagnitudeDeg = 10;
+    public float bigJitterEvery = 2;
+    public float bigJitterMultiplier = 10;
+    public float deathLimit = 100;
+
     // PRIVATE //
     ActiveRagdollJoint[] m_joints;
 
@@ -21,6 +30,13 @@ public class ActiveRagdoll : MonoBehaviour
         {
             if(joint.spring <= 0) joint.spring = spring;
             if(joint.damper < 0) joint.damper = damper;
+
+            joint.jitterRate = jitterRate;
+            joint.jitterMagnitudeDeg = jitterMagnitudeDeg;
+            joint.jitterIncreaseRate = jitterIncreaseRate;
+            joint.bigJitterEvery = bigJitterEvery;
+            joint.bigJitterMultiplier = bigJitterMultiplier;
+            joint.deathLimit = deathLimit;
         }
     }
 

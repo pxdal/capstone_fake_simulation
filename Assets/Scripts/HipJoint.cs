@@ -18,9 +18,9 @@ public class HipJoint : ActiveRagdollJoint
     }
 
     // Update is called once per frame
-    protected override void Update()
+    protected override void FixedUpdate()
     {
-        base.Update();
+        base.FixedUpdate();
 
         //if(followingPosition) GetConfigurableJoint().targetPosition = transform.position;
     }
